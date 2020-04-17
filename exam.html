@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>DDmotor</title>
+		<title>Machine Exam</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -16,10 +16,10 @@
 			<section id="banner">
 				<div class="inner split">
 					<section>
-						<h2>DD馬達</h2>
+						<h2>加工測試</h2>
 					</section>
 					<section>
-						<p>C軸為內藏主軸<br>馬達使用Fanuc Dis系列</p>
+						<p>根據所需的成品特性,規劃機台基本性能測試</p>
 					</section>
 				</div>
 			</section>
@@ -27,16 +27,14 @@
 			<section id="one" class="wrapper">
 				<div class="inner split">
 					<section>
-						<h2>設計理念</h2>
-						<p>根據<a href="https://github.com/skynocover/Wiki-for-Spindle/wiki">主軸設計理念</a>逐一確認主軸所需的規格</p>
+						<h2>機台基本性能測試</h2>
+						<p>為了確定未來機台基本可以加工的性能<br></p>
 					</section>
 					<section>
 						<ul class="checklist">
-							<li>必須挑選<b>同時俱備</b>高扭矩模式及高轉速模式</li>
-							<li>根據<a href="https://skynocover.github.io/Technical_Information/contents/calc/ScrewSet/motorTorque.html">阻抗計算</a>所需的主軸功率</li>
-							<li><b>長閉式結構</b>降低因斷電造成的風險</li>
-							<li>DmN值為考量點決定使用<b>油脂潤滑</b></li>
-							<li>使用<a href="https://github.com/skynocover/Machine_Heat">發熱量計算軟體</a>計算可能的發熱,並規劃主軸內部冷卻水路</li>							
+							<li><a href="#minfeed">最小可加工的進給</a></li>
+							<li><a href="#minfeed">最大可加工的進給</a></li>
+							<li></li>
 						</ul>
 					</section>
 				</div>
@@ -45,24 +43,37 @@
 
 			<section id="two" class="wrapper style2 alt">
 				<div class="inner">
+					<div class="spotlight" id="minfeed">
+						<div class="image">
+							<img src="images/motor/Caxis.png" alt="" />
+						</div>
+						<div class="content">
+							<h3>最小加工進給</h3>
+							<p></p>
+						</div>
+					</div>
+
 					<div class="spotlight">
 						<div class="image">
 							<img src="images/motor/Caxis.png" alt="" />
 						</div>
 						<div class="content">
-							<h3>Wobble</h3>
-							<p>以加工的狀況而言,比起軸心的偏擺,盤面的wobble更為重要,<br>因此將此主軸在不同半徑下的wobble數值作紀錄,並在未來加工測試中做為比較的依據</p>
+							<h3></h3>
+							<p></p>
 						</div>
 					</div>
-					<div class="spotlight" >
+
+					<div class="spotlight">
 						<div class="image">
-							<img src="images/spindle/rigidity.png" alt="" />
+							<img src="images/motor/Caxis.png" alt="" />
 						</div>
 						<div class="content">
-							<h3>切換模式</h3>
-							<p>研磨的條件通常為低轉速,高定位精度<br>車削的條件通常為高轉速,<br>因此需要將兩種加工時的模式進行切換<br>作法為使用Mcode作為車床模式,使用Gcode作為磨床模式</p>
+							<h3></h3>
+							<p></p>
 						</div>
 					</div>
+					
+					
 					<ul class="actions special">
 						<li><a href="#" class="button alt">Take me Home</a></li>
 					</ul>

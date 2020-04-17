@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>DDmotor</title>
+		<title>Auto Chuck</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -16,10 +16,10 @@
 			<section id="banner">
 				<div class="inner split">
 					<section>
-						<h2>DD馬達</h2>
+						<h2>自動夾頭</h2>
 					</section>
 					<section>
-						<p>C軸為內藏主軸<br>馬達使用Fanuc Dis系列</p>
+						<p>使用InoFlex自動夾頭<br>搭配自動化</p>
 					</section>
 				</div>
 			</section>
@@ -27,16 +27,14 @@
 			<section id="one" class="wrapper">
 				<div class="inner split">
 					<section>
-						<h2>設計理念</h2>
-						<p>根據<a href="https://github.com/skynocover/Wiki-for-Spindle/wiki">主軸設計理念</a>逐一確認主軸所需的規格</p>
+						<h2>機台自動化的基本</h2>
+						<p>工廠自動化的基本就是機台自動化,因此要逐漸將原本手動的部分改成自動<br>另外因為沒有了人工的輔助,因此重複精度也是一大重點</p>
 					</section>
 					<section>
 						<ul class="checklist">
-							<li>必須挑選<b>同時俱備</b>高扭矩模式及高轉速模式</li>
-							<li>根據<a href="https://skynocover.github.io/Technical_Information/contents/calc/ScrewSet/motorTorque.html">阻抗計算</a>所需的主軸功率</li>
-							<li><b>長閉式結構</b>降低因斷電造成的風險</li>
-							<li>DmN值為考量點決定使用<b>油脂潤滑</b></li>
-							<li>使用<a href="https://github.com/skynocover/Machine_Heat">發熱量計算軟體</a>計算可能的發熱,並規劃主軸內部冷卻水路</li>							
+							<li>上下料自動化</li>
+							<li>重複精度0.3um</li>
+							<li>經過<a href="#clampingforce">夾持力計算</a>確認</li>
 						</ul>
 					</section>
 				</div>
@@ -45,24 +43,34 @@
 
 			<section id="two" class="wrapper style2 alt">
 				<div class="inner">
-					<div class="spotlight">
+					<div class="spotlight" id="clampingforce">
 						<div class="image">
 							<img src="images/motor/Caxis.png" alt="" />
 						</div>
 						<div class="content">
-							<h3>Wobble</h3>
-							<p>以加工的狀況而言,比起軸心的偏擺,盤面的wobble更為重要,<br>因此將此主軸在不同半徑下的wobble數值作紀錄,並在未來加工測試中做為比較的依據</p>
+							<h3>夾持力計算</h3>
+							<p>從切削阻抗計算所需的夾持力,再根據所需的夾持力換算所需的油壓力</p>
 						</div>
 					</div>
-					<div class="spotlight" >
-						<div class="image">
-							<img src="images/spindle/rigidity.png" alt="" />
+					<div class="spotlight">
+						<div class="image" >
+							<img src="images/motor/Caxis.png" alt="" />
 						</div>
 						<div class="content">
-							<h3>切換模式</h3>
-							<p>研磨的條件通常為低轉速,高定位精度<br>車削的條件通常為高轉速,<br>因此需要將兩種加工時的模式進行切換<br>作法為使用Mcode作為車床模式,使用Gcode作為磨床模式</p>
+							<h3>螺帽變形</h3>
+							<p>經過真圓度儀確認經過夾持後螺帽法蘭面的變形量,<br>並以此決定夾爪形式</p>
 						</div>
 					</div>
+					<div class="spotlight">
+						<div class="image" >
+							<img src="images/motor/Caxis.png" alt="" />
+						</div>
+						<div class="content">
+							<h3>夾持力計算</h3>
+							<p></p>
+						</div>
+					</div>
+					
 					<ul class="actions special">
 						<li><a href="#" class="button alt">Take me Home</a></li>
 					</ul>
