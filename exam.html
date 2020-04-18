@@ -32,9 +32,9 @@
 					</section>
 					<section>
 						<ul class="checklist">
-							<li><a href="#minfeed">最小可加工的進給</a></li>
-							<li><a href="#minfeed">最大可加工的進給</a></li>
-							<li></li>
+							<li><a href="#minfeed">最小車床可加工的進給(20μm)</a></li>
+							<li><a href="#minfeed">最大車床可加工的進給(100μm)</a></li>
+							<li><a href="#lathing">車削阻抗</a>量測</li>
 						</ul>
 					</section>
 				</div>
@@ -45,37 +45,49 @@
 				<div class="inner">
 					<div class="spotlight" id="minfeed">
 						<div class="image">
-							<img src="images/motor/Caxis.png" alt="" />
+							<img src="images/workingTest/repeatability.png" alt="" />
 						</div>
 						<div class="content">
 							<h3>最小加工進給</h3>
-							<p></p>
+							<p>重複進行同一進給的加工,確認<b>重現性</b></p>
 						</div>
 					</div>
 
 					<div class="spotlight">
 						<div class="image">
-							<img src="images/motor/Caxis.png" alt="" />
+							<img src="images/workingTest/cavature.png" alt="" />
 						</div>
 						<div class="content">
-							<h3></h3>
-							<p></p>
+							<h3>最大加工進給</h3>
+							<p>使用不同進給的加工並確認加工成品,作為未來<b>檢驗機台性能的依據</b></p>
 						</div>
 					</div>
 
-					<div class="spotlight">
+					<div class="spotlight" id="lathing">
 						<div class="image">
-							<img src="images/motor/Caxis.png" alt="" />
+							<img src="images/workingTest/lathing.png" alt="" />
 						</div>
 						<div class="content">
-							<h3></h3>
-							<p></p>
+							<h3>車削阻抗</h3>
+							<p>更換不同進給率,線速度,進給量來確認不同條件下的阻抗</p>
+							<p>根據阻抗與整個系統的剛性來決定最終使用的加工條件</p>
+						</div>
+					</div>
+
+					<div class="spotlight" id="lathing">
+						<div class="image">
+							<img src="images/workingTest/grinding.png" alt="" />
+						</div>
+						<div class="content">
+							<h3>研磨動作分析</h3>
+							<p>因為在加工時無法確認實際的加工情形,因此使用<a href="https://www.kistler.com/en/product/type-9257b/">Kistler動力計</a>確認加工時的阻抗變化</p>
+							<p>以此來推斷加工的狀況</p>
 						</div>
 					</div>
 					
 					
 					<ul class="actions special">
-						<li><a href="#" class="button alt">Take me Home</a></li>
+						<li><a href="index.html" class="button alt">Take me Home</a></li>
 					</ul>
 				</div>
 			</section>
